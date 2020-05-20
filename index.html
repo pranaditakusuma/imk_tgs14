@@ -1,0 +1,257 @@
+<!--18/05/2020-->
+<!-- Hambatan pasti akan selalu ada untuk menghampiri kita. 
+  There are a lot of things happened and things got hard unexpectedly in a row semenjak beberapa bulan terakhir
+  Mohon maaf atas segala kekurangan dan ketidakbaikan dari website ini.
+  Website ini dibuat ditengah-tengah munculnya berbagai masalah keluarga dan finansial, kuota yang kian menipis, dan hati yang semakin terluka
+  Mohon maaf atas keputusasaan yang tiba-tiba melanda ini
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<title>BooBoo-T</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="icon" href="asset/logoBooBooT.png">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:  url('asset/bobaCover.jpg');
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Bubble Tea by BooBoo-T</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <br>
+    <br>
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">BooBoo-T</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>BooBoo-T</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+    <img src="asset/logoBooBooT.png" style="width:400px" class="w3-circle w3-right" alt="logo BooBoo-T">
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Promo</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Favorite</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">New Menu</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Milk Tea Bubble</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 10.000</span></h1>
+      <p class="w3-text-grey">Paduan bubble manis dengan susu segar seperti senyumanmu</p>
+      <hr>
+   
+      <h1><b>Thai Tea Bubble</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 13.000</span></h1>
+      <p class="w3-text-grey">Menghadirkan rasa thai tea yang menyejukkan seperti aura cantikmu</p>
+      <hr>
+      
+      <h1><b>Matcha Boba</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 13.000</span></h1>
+      <p class="w3-text-grey">Minuman menyegarkan dengan rasa asli Jepang seperti aslinya rasa sayangmu padaku</p>
+      <hr>
+
+      <h1><b>Choco Cream Boba</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 11.000</span></h1>
+      <p class="w3-text-grey">Paduan susu indomilk lezat dengan manisnya boba seperti manisnya lesung pipimu</p>
+      <hr>
+
+      <h1><b>Avocado boba milk</b> <span class="w3-tag w3-red w3-round">Mmmmmm!</span><span class="w3-right w3-tag w3-dark-grey w3-round">Rp 11.000</span></h1>
+      <p class="w3-text-grey">Nikmatnya paduan alpukat dan susu yang akan menyegarkan moodmu</p>
+      <hr>
+
+      <h1><b>Cappucino bubble meelk</b> <span class="w3-tag w3-grey w3-round">WoW</span><span class="w3-right w3-tag w3-dark-grey w3-round">Rp 11.000</span></h1>
+      <p class="w3-text-grey">Manisnya paduan susu dan cappucino yang akan membuatmu semakin manis</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Salted Boba Caramel</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 30.000</span></h1>
+      <p class="w3-text-grey">Manisnya caramel layaknya mansinya kamu</p>
+      <hr>
+   
+      <h1><b>Brown sugar boba milk-T</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 28.000</span></h1>
+      <p class="w3-text-grey">Pekatnya manis gula coklat seperti pekatnya cintamu padaku</p>
+      <hr>
+      
+      <h1><b>Yuzu Sakura Boba Machiato</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 25.000</span></h1>
+      <p class="w3-text-grey">Segarnya rasa asli yuzu dari Jepang seperti segarnya senyumanmu</p>
+      <hr>
+
+      <h1><b>Strawberry Forrest Machiato Boba Special</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 21.000</span></h1>
+      <p class="w3-text-grey">Paduan manis dan kecut seperti lika-liku jalan cinta kita </p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Mango Meelk Boba-T</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">Rp 19.000</span></h1>
+      <p class="w3-text-grey">Menu musiman layaknya kehadiranmu yang tak selalu ada buatku</p>
+      <hr>
+   
+      <h1><b>Taro Boba Meelk-T</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 19.000</span></h1>
+      <p class="w3-text-grey">Indahnya warna ungu dan nikmatnya rasa taro seperti kasih sayangmu kepadaku </p>
+      <hr>
+      
+      <h1><b>Butterscotch Boba</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 22.000</span></h1>
+      <p class="w3-text-grey">Rasa baru seperti cinta kita yang baru terbentuk</p>
+      <hr>
+      
+      <h1><b>Mocca Boba</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rp 20.000</span></h1>
+      <p class="w3-text-grey">Familiarnya rasa mocca dengan sajian enaknya boba seperti rasa yang pernah ada</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <center>
+
+      <b>
+        <p>BooBoo-T adalah minuman otentik yang dibuat dengan penuh kasih dengan rasa yang khas dan menyegarkan untukmu agar bisa melupakan masalah keluarga, finansial, hari buruk, mental yang lelah, dan hati yang sudah tak kuasa menahan beban.</p>
+      </b>
+    </center>
+    
+    <br>
+
+    <p><strong>Est.</strong> 2K19</p>
+    <p>Kami bangga menjual produk tanpa lisensi luar negeri!</p>
+    <img src="asset/menu1.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<img src="asset/menu2.jpeg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Call us at <b>000123156161</b></p>
+    <a href="https://www.google.co.id/maps">Location</a>   
+    <p><b>Jalan Menikmati Hidup No.1, Indonesia </b></p>
+    
+    <a href="https://www.instagram.com">Instagram</a> 
+    <p> - Instargram: @akuninstagram</p>
+    <a href="https://www.facebook.com">Facebook</a>
+    <p> - Instargram: Akun Facebook</p>
+    <br>
+    <br>
+    <p><span class="w3-tag">FYI!</span> We open for wedding or birthday menu order :).</p>
+    <p class="w3-xxlarge"><strong>Booking</strong> menu for birthday or wedding</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+
+    <br>
+    <br>
+
+
+    <center>
+      <b>
+
+        <a href="https://www.twitter.com">Share Website Ini ke Twitter kamu!</a>
+      </b>
+     
+    </center>
+
+    <br>
+    <center>
+      <h3>
+        <u>I Komang Pranadita Kusuma Jaya</u>
+      </h3>
+    </center>
+
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Website ini dibuat dan dikumpulkan se-berharap mungkin ditengah-tengah terjadinya masalah keluarga, masalah ekonomi, kuota yang semakin sekarat, dunia yang semakin pudar, dan hati yang kian memberontak karena harus menampung semua beban ini bersamaan sekaligus di beberapa bulan terakhir (: :(  </p>
+  <br>
+  <p>Saya memohon maaf dengan sangat atas segala kekurangan dan ketidakbaikannya. Meski hopeless, hidup memang harus dijalani. Terima kasih </p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
